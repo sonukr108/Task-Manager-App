@@ -103,7 +103,7 @@ const FooterPart = () => {
 }
 
 const App = () => {
-  const [tasks, setTask] = useState([{ task: 'React', description: 'Learning react with tailwing css and some other things.' }]);
+  const [tasks, setTask] = useState([{ task: 'React', description: 'Learning react with tailwind css and some other things.' }]);
   const [taskInputValue, setTaskInputValue] = useState('');
   const [taskDescInputValue, setTaskDescInputValue] = useState('');
 
