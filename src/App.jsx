@@ -12,14 +12,16 @@ const TaskInput = ({ taskInputValue, setTaskInputValue, taskDescInputValue, setT
         </span>
         <span className='md:w-[70%] w-[100%]'>
           <div className='inputs flex flex-col gap-5'>
-            <input className='border-2 border-gray-800 focus:border-green-500 focus:shadow-sm focus:shadow-green-300 outline-none transition duration-300 p-2 rounded-md text-lg'
+            <input
+              className='border-2 border-gray-800 focus:border-green-500 focus:shadow-sm focus:shadow-green-300 outline-none transition duration-300 p-2 rounded-md text-lg placeholder-gray-600 dark:placeholder-gray-300'
               type='text' name='taskInput' id='taskInput' value={taskInputValue}
               onChange={(e) => setTaskInputValue(e.target.value)} placeholder='Enter task'
             />
 
             <label className='font-bold md:hidden text-xl' htmlFor='taskDescription'>Task Description</label>
 
-            <input className='border-2 border-gray-800 focus:border-blue-500 focus:shadow-sm focus:shadow-blue-300 outline-none transition duration-300 p-2 rounded-md text-lg'
+            <input
+              className='border-2 border-gray-800 focus:border-blue-500 focus:shadow-sm focus:shadow-blue-300 outline-none transition duration-300 p-2 rounded-md text-lg placeholder-gray-600 dark:placeholder-gray-300'
               type='text' name='taskDescription' id='taskDescription' value={taskDescInputValue}
               onChange={(e) => setTaskDescInputValue(e.target.value)} placeholder='Enter task description'
             />
